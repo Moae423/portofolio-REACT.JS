@@ -1,9 +1,19 @@
-export default function card() {
+import Image from "../assets/project.jpg";
+export default function Project() {
   return (
     <>
-      <section className="bg-white dark:bg-gray-900 ">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16">
-          <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 mb-8">
+      <section style={{}} className="min-h-screen relative bg-slate-900">
+        <div
+          className="absolute inset-0 bg-cover bg-center blur-sm"
+          style={{
+            backgroundImage: `url(${Image})`,
+          }}
+        ></div>
+        <div className="py-8 px-4 mx-auto max-w-screen-xl relative z-10">
+          <h1 className="text-center text-4xl font-black tracking-tight leading-none mb-8 text-white md:text-5xl lg:text-6xl">
+            My Projects !
+          </h1>
+          <div className=" dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg hover:shadow-2xl transition-all duration-300 p-8 md:p-12 mb-8">
             <a
               href="#"
               className="bg-blue-100 text-blue-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-blue-400 mb-2"
@@ -50,7 +60,7 @@ export default function card() {
             </a>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 hover:shadow-2xl transition-all duration-300">
               <a
                 href="#"
                 className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2"
@@ -96,7 +106,7 @@ export default function card() {
                 </svg>
               </a>
             </div>
-            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
+            <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12 hover:shadow-2xl transition-all duration-300">
               <a
                 href="#"
                 className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
