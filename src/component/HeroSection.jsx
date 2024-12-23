@@ -1,4 +1,4 @@
-import gambar from "../assets/code.jpeg";
+import gambar from "../assets/git.jpg";
 console.log(gambar);
 export default function HeroSection() {
   function handleClick(e) {
