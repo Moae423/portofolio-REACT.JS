@@ -1,3 +1,5 @@
+import gambar from "../assets/code.jpeg";
+console.log(gambar);
 export default function HeroSection() {
   function handleClick(e) {
     e.preventDefault();
@@ -7,7 +9,10 @@ export default function HeroSection() {
     ).innerHTML = `Haii ${nama}, Selamat Datang!`;
   }
   return (
-    <section className="bg-center  bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+    <section
+      style={{ backgroundImage: `url(${gambar})` }}
+      className="bg-center min-h-screen bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply"
+    >
       <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1
           id="YourName"
