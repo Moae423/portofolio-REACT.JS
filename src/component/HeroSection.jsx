@@ -1,14 +1,18 @@
 import gambar from "../assets/git.jpg";
 export default function HeroSection() {
   function handleKey(event) {
-    const nama = document.getElementById("inputName").value;
-    event.key === "Enter"
-      ? (event.preventDefault(),
-        (document.getElementById(
-          "YourName"
-        ).innerHTML = `Haii ${nama}, Selamat Datang!`))
-      : null;
+    if (event.key === "Enter") {
+      const nama = document.getElementById("inputName").value;
+      const isi =
+        "Saya Daffa Rihadatul Fairus, Programmer dan Web Developer Siap Membantu Anda Membuat Solusi Digital yang Menginspirasi.";
+
+      document.getElementById(
+        "YourName"
+      ).innerHTML = `Haii ${nama}, Selamat Datang !`;
+      document.getElementById("content").innerText = isi;
+    }
   }
+
   function handleClick(e) {
     e.preventDefault();
     const nama = document.getElementById("inputName").value;
@@ -29,9 +33,12 @@ export default function HeroSection() {
           {/* namanya user akan muncul disini ketika di input dari button dibawah */}
           Say Your Name!
         </h1>
-        <p className="mb-8 text-lg font-normal text-gray-300 lg:text-3xl md:text-2xl sm:text-xl sm:px-16 lg:px-48">
+        <p
+          id="content"
+          className="mb-8 text-lg font-normal text-gray-300 lg:text-3xl md:text-2xl sm:text-xl sm:px-16 lg:px-48"
+        >
           Selamat datang di website gw, sebelum scroll kebawah, yuk ketik namamu
-          disini supaya kita saling kenal nantinya😁
+          disini supaya kita saling kenal nantinya
         </p>
         {/* input */}
         <div className="flex items-center max-w-md mx-auto">

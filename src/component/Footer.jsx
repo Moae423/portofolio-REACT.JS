@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
-    <footer className="bg-slate-900">
-      <div className="w-full mx-auto max-w-screen-xl px-4 py-8 md:flex md:items-center md:justify-between">
+    <footer className="bg-slate-900 fixed bottom-0 left-0 z-20 w-full">
+      <div className="w-full mx-auto max-w-screen-xl px-4 py-4   md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2025{" "}
           <a href="https://flowbite.com/" className="hover:underline">
